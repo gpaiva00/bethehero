@@ -10,7 +10,7 @@ export default {
     .select('name')
     .first();
 
-    if(!ong) return res.status(400).json({ error: 'No ONG found with this ID' });
+    if(!ong) return res.status(400).json({ error: 'ONG não encontada com este ID' });
 
     return res.json(ong);
   }
