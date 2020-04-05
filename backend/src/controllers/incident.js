@@ -22,7 +22,7 @@ export default {
     
     res.header('X-Total-Count', count['count(*)']);
 
-    return res.json({ incidents });
+    return res.send(incidents);
   },
 
   async create (req, res) {
